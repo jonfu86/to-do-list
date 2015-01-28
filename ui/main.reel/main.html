@@ -25,6 +25,9 @@
         },
         "badge": {
             "prototype": "digit/ui/badge.reel",
+            "properties": {
+                "element": {"#": "badge"}
+            },
             "bindings": {
                 "value": {"<-": "@rangeController.organizedContent.filter{!completed}.length"}
             }
@@ -79,7 +82,7 @@
 
         </h1>
         <button data-montage-id="button"></button>
-        <output data-montage-id="badge"></output>
+        <output data-montage-id="badge">0</output>
         <ul data-montage-id="list">
             <li data-montage-id="task1"></li>
         </ul>
